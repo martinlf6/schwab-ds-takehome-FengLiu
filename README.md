@@ -1,2 +1,1 @@
-# schwab-ds-takehome-FengLiu
-Client Sentiment Analysis
+# Cognitive AI – Aspect-Based Sentiment on Financial Text
