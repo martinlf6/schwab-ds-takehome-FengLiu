@@ -34,7 +34,7 @@ This shows precision, recall, F1-score, and support for each class.
 -	High accuracy here is good, but less critical compared to negative or positive.
 ### Positive Class (Opportunities, good sentiment, positive financial signals)
 -	Precision = 0.93, Recall = 0.98: Very strong performance.
--	Business impact: If this model is used for market sentiment or customer engagement, then missing positives (false negatives) could mean overlooking opportunities (e.g., happy customers you could upsell, bullish market news).
+-	Business impact: If this model is used for market sentiment or customer engagement, then missing positives (false negatives) could mean overlooking opportunities (e.g., happy customers you could upsell).
 -	Good recall ensures you don’t miss many positives, but slightly lower precision means a few false positives (things flagged as positive but not truly so).
 ## Metric Priorities Depend on Use Case
 ### If used for risk detection (fraud, complaints):
