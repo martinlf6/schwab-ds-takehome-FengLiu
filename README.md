@@ -14,13 +14,13 @@ We (1) explore data, (2) extract aspects (entities/features), and (3) fine-tune 
 - **Models**:
   - Sentence sentiment (FinBERT).
   - Aspect–sentiment pair classifier `[CLS] sentence [SEP] aspect [SEP]`.
-- **Evaluation**: Accuracy, macro-F1, precision, recall; slice metrics; qualitative error analysis.
+- **Evaluation**: Accuracy, macro-F1, precision, recall; slice metrics.
 
 # Inference
-## Key Findings (sample)
+## Key Findings
 -	Class is imblanced with much more neutral sentiment than positive which is more than negative.
 -	Sentence model macro-F1: 0.96.
--	ABSA macro-F1 (validation pairs): [x.xx].
+-	ABSA macro-F1: 0.99.
 -	Frequent negative aspects: eur, profit, net, sales.
 -	Positive aspects: eur, profit, net.
 
