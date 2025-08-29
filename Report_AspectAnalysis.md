@@ -1,25 +1,25 @@
 # Classification Report
 This shows precision, recall, F1-score, and support for each class.
-## Negative (61 samples)
+## Negative (46 samples)
 -	Precision = 0.98: When the model predicts negative, 98% are correct.
--	Recall = 0.92: Of all true negative cases, 92% are captured.
--	F1-score = 0.95: Balance between precision & recall especially when dealing with imbalanced datasets.
-## Neutral (278 samples)
--	Precision = 1.00: Every time the model predicts neutral, it’s always correct.
--	Recall = 0.99: Almost all true neutral cases are identified (only 1% missed).
+-	Recall = 0.89: Of all true negative cases, 89% are captured.
+-	F1-score = 0.93: Balance between precision & recall especially when dealing with imbalanced datasets.
+## Neutral (261 samples)
+-	Precision = 0.99: Almost every time the model predicts neutral, it’s correct.
+-	Recall = 1.00: All true neutral cases are identified.
 -	F1-score = 0.99: Very strong performance
-## Positive (114 samples)
-- Precision = 0.93: When predicting positive, 93% are correct (7% false positives).
--	Recall = 0.98: Almost all true positives are captured.
--	F1-score = 0.95: Solid balance
+## Positive (95 samples)
+- Precision = 0.95: When predicting positive, 95% are correct (5% false positives).
+-	Recall = 0.97: Almost all true positives are captured.
+-	F1-score = 0.96: Strong performance
 ## Overall Metrics
--	Accuracy = 0.98: Out of all 453 test samples, 98% are correct.
+-	Accuracy = 0.98: Out of all 402 test samples, 98% are correct.
 -	Macro avg = averages metrics equally across classes F1 = 0.96
 -	Weighted avg = averages weighted by class size F1 = 0.98
 ## Key Takeaways
 -	The model performs exceptionally well (98% accuracy, F1 > 0.95 across all classes).
--	Neutral is almost perfectly predicted (possibly because it’s the majority class).
--	Negative has slightly lower recall (0.92): some negatives get mistaken as positives.
+-	Neutral is perfectly predicted.
+-	Negative has slightly lower recall (0.89): some negatives get mistaken as positives.
 -	Overall balance is strong, meaning class imbalance is not severely hurting performance.
 
 # Business/Real-World Interpretation
