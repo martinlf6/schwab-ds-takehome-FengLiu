@@ -12,7 +12,7 @@ This shows precision, recall, F1-score, and support for each class.
 - Precision = 0.93: When predicting positive, 93% are correct (7% false positives).
 -	Recall = 0.98: Almost all true positives are captured.
 -	F1-score = 0.95: Solid balance
-## Overall metrics
+## Overall Metrics
 -	Accuracy = 0.98: Out of all 453 test samples, 98% are correct.
 -	Macro avg = averages metrics equally across classes F1 = 0.96
 -	Weighted avg = averages weighted by class size F1 = 0.98
