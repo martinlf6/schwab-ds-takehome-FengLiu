@@ -17,27 +17,27 @@ We (1) explore data, (2) extract aspects (entities/features), and (3) fine-tune 
 - **Evaluation**: Accuracy, macro-F1, precision, recall; slice metrics; qualitative error analysis.
 
 # Inference
-**Key Findings (sample)**
+## Key Findings (sample)
 -	Class balance is [fill from EDA].
 -	Sentence model macro-F1: [x.xx].
 -	ABSA macro-F1 (validation pairs): [x.xx].
 -	Frequent negative aspects: fees, guidance, outages.
 -	Positive aspects: dividends, margins, cost control.
 
-**Advisor-facing Recommendations**
+## Advisor-facing Recommendations
 -	Alert on spikes in negative aspect sentiment for covered holdings (30/60/90d).
 -	Provide per-client aspect summaries (top concerns/interests).
 -	Integrate ABSA signals into CRM with explainable highlights.
 
-**Challenges & Limitations**
+## Challenges & Limitations
 -	Dataset is sentence-level; ABSA labels partly weakly supervised.
 -	Domain drift and entity coverage biases (large-cap skew).
 -	Future work: human-in-the-loop labeling; improved aspect shifter handling; temporal models.
 
-**Ethics & Bias**
+## Ethics & Bias
 -	Use with consent; minimize PII.
 -	Monitor for coverage bias; keep advisor in the loop.
 -	Provide transparent rationales for decisions.
 
-**Results & Visuals**
+## Results & Visuals
 See results/ for metrics, confusion matrices, and sample explanations.
