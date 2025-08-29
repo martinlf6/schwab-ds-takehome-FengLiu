@@ -24,20 +24,15 @@ We (1) explore data, (2) extract aspects (entities/features), and (3) fine-tune 
 -	Frequent negative aspects: eur, profit, net, sales.
 -	Positive aspects: eur, profit, net.
 
-## Advisor-facing Recommendations
--	Alert on spikes in negative aspect sentiment for covered holdings (30/60/90d).
--	Provide per-client aspect summaries (top concerns/interests).
--	Integrate ABSA signals into CRM with explainable highlights.
-
 ## Challenges & Limitations
--	Dataset is sentence-level; ABSA labels partly weakly supervised.
--	Domain drift and entity coverage biases (large-cap skew).
--	Future work: human-in-the-loop labeling; improved aspect shifter handling; temporal models.
+-	Interpret results with caution due to the small sample size.
+-	Dataset is sentence-level; ABSA labels are weakly supervised.
+-	Future directions: expand sample size through synthetic data generation, incorporate human-in-the-loop labeling, and enhance aspect shifter handling (e.g., sentiment changes triggered by negations such as “not”).
 
 ## Ethics & Bias
 -	Use with consent; minimize PII.
 -	Monitor for coverage bias; keep advisor in the loop.
 -	Provide transparent rationales for decisions.
 
-## Results & Visuals
-See results/ for metrics, confusion matrices, and sample explanations.
+## Results & Recommendations
+See reports (e.g., Report_SentenceAnalysis.md) for detailed results (metrics) and advisor-facing recommendations.
