@@ -18,11 +18,11 @@ We (1) explore data, (2) extract aspects (entities/features), and (3) fine-tune 
 
 # Inference
 ## Key Findings (sample)
--	Class balance is [fill from EDA].
--	Sentence model macro-F1: [x.xx].
+-	Class is imblanced with much more neutral sentiment than positive which is more than negative.
+-	Sentence model macro-F1: 0.96.
 -	ABSA macro-F1 (validation pairs): [x.xx].
--	Frequent negative aspects: fees, guidance, outages.
--	Positive aspects: dividends, margins, cost control.
+-	Frequent negative aspects: eur, profit, net, sales.
+-	Positive aspects: eur, profit, net.
 
 ## Advisor-facing Recommendations
 -	Alert on spikes in negative aspect sentiment for covered holdings (30/60/90d).
