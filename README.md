@@ -1,8 +1,8 @@
 # Cognitive AI – Aspect-Based Sentiment on Financial Text
 
 ## Overview
-We analyze financial text to produce advisor-ready insights using **aspect-based sentiment analysis (ABSA)** on the `financial_phrasebank` dataset.
-We (1) explore data, (2) extract aspects (entities/features), and (3) fine-tune finance-domain transformers for sentence and aspect sentiment, and aggregate insights for proactive client engagement.
+We analyzed financial text to produce advisor-ready insights using **aspect-based sentiment analysis (ABSA)** on the `financial_phrasebank` dataset.
+We (1) explored data, (2) extracted aspects (entities/features), and (3) fine-tuned finance-domain transformers for sentence and aspect sentiment, and aggregated insights for proactive client engagement.
 
 ## Dataset
 - Hugging Face: `financial_phrasebank`.
