@@ -1,44 +1,29 @@
-Sentiment Analysis Results
-Sentence Sentiment Analysis
-Reports
-Classification Report (Top Table)
+# Sentence Sentiment Analysis
+## Classification Report
 This shows precision, recall, F1-score, and support for each class.
-•	Negative (61 samples)
-o	Precision = 0.98 → When the model predicts negative, 98% are correct.
-o	Recall = 0.92 → Of all true negative cases, 92% are captured (8% missed, misclassified as positive).
-o	F1-score = 0.95 → Balance between precision & recall.
-•	Neutral (278 samples)
-o	Precision = 1.00 → Every time the model predicts neutral, it’s always correct.
-o	Recall = 0.99 → Almost all true neutral cases are identified (only 1% missed).
-o	F1-score = 0.99 → Very strong performance here.
-•	Positive (114 samples)
-o	Precision = 0.93 → When predicting positive, 93% are correct (7% false positives).
-o	Recall = 0.98 → Almost all true positives are captured.
-o	F1-score = 0.95 → Solid balance.
-Overall metrics
-•	Accuracy = 0.98 → Out of all 453 test samples, 98% are correct.
-•	Macro avg = averages metrics equally across classes → F1 = 0.96
-•	Weighted avg = averages weighted by class size → F1 = 0.98 (higher because neutral dominates with 278 samples and is predicted very well).
-Confusion Matrix (Bottom Plot)
-This shows actual vs predicted counts:
-•	Row = True class, Column = Predicted class
-o	Negative (61 true):
-	56 correctly predicted as negative
-	5 misclassified as positive
-o	Neutral (278 true):
-	274 correctly predicted
-	4 misclassified as positive
-o	Positive (114 true):
-	112 correctly predicted
-	1 misclassified as negative
-	1 misclassified as neutral
-👉 Errors are very few and mostly between negative ↔ positive or neutral ↔ positive (natural since they’re semantically closer).
-Key Takeaways
+### Negative (61 samples)
+-	Precision = 0.98 → When the model predicts negative, 98% are correct.
+-	Recall = 0.92 → Of all true negative cases, 92% are captured (8% missed, misclassified as positive).
+-	F1-score = 0.95 → Balance between precision & recall.
+### Neutral (278 samples)
+-	Precision = 1.00 → Every time the model predicts neutral, it’s always correct.
+-	Recall = 0.99 → Almost all true neutral cases are identified (only 1% missed).
+-	F1-score = 0.99 → Very strong performance here.
+### Positive (114 samples)
+- Precision = 0.93 → When predicting positive, 93% are correct (7% false positives).
+-	Recall = 0.98 → Almost all true positives are captured.
+-	F1-score = 0.95 → Solid balance.
+### Overall metrics
+-	Accuracy = 0.98 → Out of all 453 test samples, 98% are correct.
+-	Macro avg = averages metrics equally across classes → F1 = 0.96
+-	Weighted avg = averages weighted by class size → F1 = 0.98 (higher because neutral dominates with 278 samples and is predicted very well).
+## Key Takeaways
 1.	The model performs exceptionally well (98% accuracy, F1 > 0.95 across all classes).
 2.	Neutral is almost perfectly predicted (possibly because it’s the majority class).
 3.	Negative has slightly lower recall (0.92) → some negatives get mistaken as positives.
 4.	Overall balance is strong, meaning class imbalance is not severely hurting performance.
-Business/Real-World Interpretation
+
+## Business/Real-World Interpretation
 Why These Metrics Matter in Business Context
 1. Negative Class (Customer complaints, risk alerts, bad financial news)
 •	Recall = 0.92 → The model catches 92% of negatives, but misses 8%.
