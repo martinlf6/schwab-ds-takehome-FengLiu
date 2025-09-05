@@ -19,7 +19,7 @@ We analyzed financial text to generate advisor-ready insights using aspect-based
 ## Key Findings
 -	Class is imbalanced with much more neutral sentiment than positive which is more than negative.
 -	Sentence model macro-F1: 0.96.
--	ABSA macro-F1: 0.99.
+-	ABSA macro-F1: 0.95.
 -	Frequent negative aspects: eur, profit, net, sales.
 -	Positive aspects: eur, profit, net.
 
